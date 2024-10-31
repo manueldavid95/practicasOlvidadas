@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Front || reto #6</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- js -->
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- header -->
+     <!-- id="principio" es para el boton -->
+    <header class="header" id="principio">
+        <div class="container">
+            <nav class="nav">
+                <figure class="logo">
+                    <img src="img/logo.png" alt="logo" class="logo-img">
+                </figure>
+
+                <ul class="nav-ul">
+                    <li class="nav-ul-li">
+                        <a href="#trabajos" class="nav-ul-link">Trabajos</a>
+                    </li>
+                    <li class="nav-ul-li">
+                        <a href="#sobre-mi" class="nav-ul-link">Sobre mi</a>
+                    </li>
+                    <li class="nav-ul-li">
+                        <a href="#contacto" class="nav-ul-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- fin header -->
+
+    <!-- hero -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-titulo">Front-End<br>Developer</h1>
+        </div>
+    </section>
+    <!-- fin hero -->
+
+    <!-- boton ir arriba -->
+    <button class="boton">
+        <a href="#principio" class="enlace">
+            <i class='bx bx-up-arrow-alt bx-fade-down' style='color:#000' ></i>
+        </a>
+    </button>
+
+    <!-- contenido principal -->
+     <main>
+        <section class="trabajos section" id="trabajos">
+            <div class="container">
+                <div class="trabajo-parrafos">
+                    <h2 class="titulo">trabajos</h2>
+                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequuntur sunt id autem nesciunt delectus hic eum quod similique mollitia!</p>
+                </div>
+                <div class="trabajos-img">
+                    <figure class="trabajos-figure">
+                        <img src="img/img-1.png" alt="">
+                    </figure>
+                    <figure class="trabajos-figure">
+                        <img src="img/img-2.png" alt="">
+                    </figure>
+                    <figure class="trabajos-figure">
+                        <img src="img/img-3.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-mi section" id="sobre-mi">
+            <div class="container">
+                <div class="grid">
+                    <div class="sobre-mi-parrafos">
+                        <h2>Sobre Mi</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequuntur sunt id autem nesciunt delectus hic eum quod similique mollitia!</p>
+                    </div>
+
+                    <figure class="img-sobre">
+                        <img src="img/img-sobre-mi.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto section" id="contacto">
+            <div class="container">
+                <div class="contacto-grid">
+                    <figure class="contacto-figure">
+                        <img src="img/logo-email.png" alt="">
+                        <figcaption>
+                            example@gmail.com
+                        </figcaption>
+                    </figure>
+
+                    <figure class="contacto-figure">
+                        <img src="img/logo-instagram.png" alt="">
+                        <figcaption>
+                            @exampleFrontweb
+                        </figcaption>
+                    </figure>
+
+                    <figure class="contacto-figure">
+                        <img src="img/logo-telefono.png" alt="">
+                        <figcaption>
+                            +52 123456789
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+     </main>
+
+     <footer>
+        <p>todos los derechos reservados 2024</p>
+     </footer>
+</body>
+
+</html>

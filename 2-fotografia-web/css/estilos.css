@@ -1,0 +1,156 @@
+/* variables */
+:root {
+    --negro: #000;
+    --blanco: #fff;
+    --fuente: "Karla", sans-serif;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--fuente);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+/* header */
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header > .container {
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 27px;
+}
+
+.nav-link {
+    text-transform: capitalize;
+    color: var(--negro);
+}
+
+/* hero img */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/img-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media(min-width: 768px) {
+    .header > .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-nav {
+        gap: 30px;
+    }
+}
+
+/* galeria */
+.titulo {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.galeria-grid {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+}
+
+.galeria-tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.galeria-tarjeta p {
+    font-weight: bolder;
+}
+
+@media(min-width: 1024px) {
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* informacion */
+.informacion {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: grid;
+    gap: 30px;
+}
+
+.informacion-tarjeta {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media(min-width: 1024px) {
+    .informacion {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .informacion-tarjeta h2 {
+        font-size: 20px;
+    }
+}
+
+/* hero */
+.section-hero {
+    width: 100%;
+    min-height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* fondo */
+    background-image: url(../img/hero-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-hero h3 {
+    font-size: 30px;
+    color: var(--blanco);
+}
+
+@media(min-width: 1024px)  {
+    .section-hero h3 {
+        font-size: 40px;
+    }
+}
+
+/* footer */
+.footer {
+    padding: 40px;
+    text-align: center;
+}
